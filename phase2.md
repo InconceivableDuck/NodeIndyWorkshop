@@ -54,6 +54,11 @@ Beer.prototype.remove = function(beerName, callback) {
 ```
 
 ## Add routes to Express app
+
+```js
+app.use(express.json());
+```
+
 ```js
 app.post('/beer', function(req, res) {
 
@@ -92,4 +97,29 @@ app.delete('/beer/:name', function(req, res) {
     }
   });
 });
+```
+
+## Connect to Mongo
+In phase1.js:
+
+```js
+var express = require('express'),
+    app = express(),
+    mongoose = require('mongoose');
+
+mongoose.connect('mongodb://107.170.4.85/brandon-cannaday');
+```
+
+## Create Beer Controller
+In phase1.js:
+
+```js
+var express = require('express'),
+    app = express(),
+    mongoose = require('mongoose'),
+    Beer = require('./beer'),
+    beer = new Beer(mongoose);
+
+// Connect to MongoDB.
+mongoose.connect('mongodb://107.170.4.85/brandon-cannaday');
 ```
