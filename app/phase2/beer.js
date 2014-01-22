@@ -1,10 +1,10 @@
 var Beer = function(mongoose) {
-    // Define Schema.
+  // Define Schema.
   this.BeerSchema = new mongoose.Schema({
     name: { type: String, required: true },
-    type: { type: String, required: true },
-    domestic: { type: Boolean, required: true },
-    rating: { type: Number, required: true }
+    type: { type: String },
+    domestic: { type: Boolean },
+    rating: { type: Number }
   });
 
   this.Beer = mongoose.model('Beer', this.BeerSchema);

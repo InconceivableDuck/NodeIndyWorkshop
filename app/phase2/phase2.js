@@ -38,8 +38,6 @@ app.get('/beer', function(req, res) {
   });
 });
 
-
-
 app.delete('/beer/:name', function(req, res) {
 
   beer.remove(req.params.name, function(err) {
