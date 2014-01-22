@@ -138,3 +138,12 @@ var express = require('express'),
 // Connect to MongoDB.
 mongoose.connect('mongodb://107.170.4.85/brandon-cannaday');
 ```
+
+## Testing
+Postman Plugin for Chrome <br />
+https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en
+
+curl:
+```
+curl -X POST -H "Content-Type: application/json" -d '{ "name" : "Miller" }' -i http://localhost:8080/beer
+```
