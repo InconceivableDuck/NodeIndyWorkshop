@@ -21,6 +21,8 @@ $ npm install
 ```
 
 ## Connect to Redis
+https://npmjs.org/package/redis <br />
+
 In phase1.js:
 
 ```js
