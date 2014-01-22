@@ -3,6 +3,23 @@ Working with MongoDB and Mongoose.
 
 MongoDB Connection String: mongodb://107.170.4.85/firstname-lastname
 
+## Add Mongoose Dependency
+http://mongoosejs.com <br />
+https://npmjs.org/package/mongoose <br />
+
+In package.json
+
+```
+"dependencies": {
+  "express" : "3.4.x",
+  "mongoose" : "3.8.x"
+}
+```
+
+```
+$ npm install
+```
+
 ## Create Beer controller (beer.js).
 
 Create a new file called beer.js. Create and export a contoller.
