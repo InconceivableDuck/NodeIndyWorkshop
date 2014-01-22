@@ -6,6 +6,8 @@ Redis Port: 6379 <br />
 Redis DB: Last 4 digits of cell phone number
 
 ## Add Redis Dependency
+https://npmjs.org/package/redis <br />
+
 In package.json
 
 ```
@@ -21,7 +23,6 @@ $ npm install
 ```
 
 ## Connect to Redis
-https://npmjs.org/package/redis <br />
 
 In phase1.js:
 
