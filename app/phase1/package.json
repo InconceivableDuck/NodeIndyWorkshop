@@ -1,0 +1,15 @@
+{
+  "name": "NodeIndyWorkshopPhase1",
+  "version": "1.0.0",
+  "description": "Phase 1 of the Node.Indy Workshop.",
+  "main": "phase1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/InconceivableDuck/NodeIndyWorkshop.git",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "express" : "3.4.x"
+  }
+}
