@@ -5,3 +5,4 @@ Get up and running.
 1. cd to app folder.
 1. $ npm install
 1. $ node phase1.js
+1. $ curl http://localhost:8080
