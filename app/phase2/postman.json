@@ -1,0 +1,49 @@
+{
+    "id": "0c7eb63f-8a5a-94ea-793d-04a2d130947a",
+    "name": "Node",
+    "requests": [
+        {
+            "collectionId": "0c7eb63f-8a5a-94ea-793d-04a2d130947a",
+            "data": "{\n\"name\":\"Dos Equis\",\n\"type\":\"Lager Especial\",\n\"domestic\":false,\n\"rating\":3\n}",
+            "dataMode": "raw",
+            "description": "",
+            "headers": "Content-Type: application/json\nAuthorization: IPC 5eb696c0-db20-48f0-bf2f-55829cec29c0\n",
+            "id": "17557075-15d6-bf71-e6e7-c3e78be89187",
+            "method": "POST",
+            "name": "Create Beer",
+            "responses": [],
+            "timestamp": 0,
+            "url": "http://localhost:8080/beer",
+            "version": 2
+        },
+        {
+            "collectionId": "0c7eb63f-8a5a-94ea-793d-04a2d130947a",
+            "data": "{\n\"name\":\"To Delete\",\n\"type\":\"Lager Suck\",\n\"domestic\":true,\n\"rating\":0\n}",
+            "dataMode": "raw",
+            "description": "",
+            "headers": "Content-Type: application/json\nAuthorization: IPC 5eb696c0-db20-48f0-bf2f-55829cec29c0\n",
+            "id": "dce4f7b6-938c-011d-a021-d3d01e753864",
+            "method": "DELETE",
+            "name": "Delete Beer",
+            "responses": [],
+            "timestamp": 0,
+            "url": "http://localhost:8080/beer/To Delete",
+            "version": 2
+        },
+        {
+            "collectionId": "0c7eb63f-8a5a-94ea-793d-04a2d130947a",
+            "data": [],
+            "dataMode": "params",
+            "description": "",
+            "headers": "Content-Type: application/json\nAuthorization: IPC 5eb696c0-db20-48f0-bf2f-55829cec29c0\n",
+            "id": "fc462537-a12e-dece-bafe-8a5d6c60d6f4",
+            "method": "GET",
+            "name": "Get Beers",
+            "responses": [],
+            "timestamp": 0,
+            "url": "http://localhost:8080/beer",
+            "version": 2
+        }
+    ],
+    "timestamp": 1390436210175
+}
