@@ -143,6 +143,8 @@ mongoose.connect('mongodb://107.170.4.85/brandon-cannaday');
 Postman Plugin for Chrome <br />
 https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en
 
+`app/phase2/postman.json` is a collection of Postman requests that can be imported into your collection.
+
 curl:
 ```
 curl -X POST -H "Content-Type: application/json" -d '{ "name" : "Miller" }' -i http://localhost:8080/beer
