@@ -80,7 +80,7 @@ Beer.prototype.updateCache = function(beers, callback) {
   this.redisClient.set('Beers', JSON.stringify(beers), callback);
 }
 
-Beer.prototype.InvalidateCache = function(callback) {
+Beer.prototype.invalidateCache = function(callback) {
   this.redisClient.del('Beers', callback);
 }
 ```
@@ -121,7 +121,7 @@ Beer.prototype.remove = function(beerName, callback) {
 
   var self = this;
 
-  self.InvalidateCache(function() {
+  self.invalidateCache(function() {
     self.Beer.remove({ name: beerName }, callback);
   });
 };
@@ -132,7 +132,7 @@ Beer.prototype.create = function(postData, callback) {
 
   var self = this;
 
-  self.InvalidateCache(function() {
+  self.invalidateCache(function() {
     var beer = new self.Beer(postData);
     beer.save(callback);
   });
